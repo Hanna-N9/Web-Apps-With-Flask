@@ -16,3 +16,14 @@ To get started, follow these steps:
 2. Navigate to the cloned directory
 3. Open your preferred Python IDE or text editor for the solutions and projects.
 
+## Contents
+
+### Lessons
+
+- **Lesson 1**: ...
+- ...
+
+### Projects
+
+- **Project 1**: ...
+- ...
