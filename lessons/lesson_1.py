@@ -6,4 +6,4 @@
 # Six different steps/ways to use functions and then finally, in the end, to use decorators: 
 
 # 1. All functions are objects
-    # 0:46
+  # 0:46
