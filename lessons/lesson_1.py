@@ -8,3 +8,14 @@
  # 1. _______________________________________________________________
 
 # All functions are objects
+  # As functions are objects, they can be used the same way as data types are used. Functions can be assigned to variables, passed as 
+  # arguments to other functions, returned as values from other functions, and so on.
+   
+def add_five(num):
+  print(num + 5)
+  
+add_five(3) # 7
+
+# There are open and close parenthesis after the function. This indicates that we want to call the function to execute all of the code 
+# inside the function.
+
