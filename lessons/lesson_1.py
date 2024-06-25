@@ -16,6 +16,4 @@ def add_five(num):
   
 add_five(3) # 7
 
-# There are open and close parenthesis after the function. This indicates that we want to call the function to execute all of the code 
-# inside the function.
 
