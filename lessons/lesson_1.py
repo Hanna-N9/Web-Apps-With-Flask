@@ -20,14 +20,17 @@ add_five(3) # 7
 
 # Functions within functions
 
-# add_two is declared inside the add_five_within function. 
+# add_two is declared inside the add_five_within function.
 def add_five_within(num):
   def add_two(inner_num): 
     return inner_num + 2
   
-  # Call the inner function `add_two` with the argument `num` from the outer function.
+  # Call the inner function add_two with the argument `num` from the outer function
+    # When add_two (ivoked) is called with num as its argument, the value of num from add_five_within is passed to add_two (invoked). 
+    # At this moment, add_two (invoked) does not yet know what num is; it just knows it is receiving an argument from the outer function. 
+    # Then, inside add_two (function name), inner_num gets the value of num.
   # Store the result to a variable. 
-  num_plus_two = add_two(num) # `num` refers to the parameter of the add_five_within function.
+  num_plus_two = add_two(num) # `num` refers to the parameter of the add_five_within function. 
   print(num_plus_two + 3) # 5
 
 add_five_within(10) # 15
