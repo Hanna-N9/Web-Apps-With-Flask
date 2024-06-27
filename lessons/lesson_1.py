@@ -20,9 +20,9 @@ add_five(3) # 7
 
 # Functions within functions
 
-# add_two is declared inside the add_five_within function. add_two function's `num` is a separate parameter from the outer function's `num`.
+# add_two is declared inside the add_five_within function. 
 def add_five_within(num):
-  def add_two(num): 
+  def add_two(inner_num): 
     return num + 2
   
   # Call the inner function `add_two` with the argument `num` from the outer function.
