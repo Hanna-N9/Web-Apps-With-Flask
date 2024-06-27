@@ -16,11 +16,11 @@ def add_five(num):
   
 add_five(3) # 7
 
- # 2. _______________________________________________________________ # 3.56
+ # 2. _______________________________________________________________ 
 
 # Functions within functions
 
-# add_two is declared inside the add_five_within function.
+# add_two is declared inside the scope of add_five_within function.
 def add_five_within(num):
   def add_two(inner_num): 
     return inner_num + 2
@@ -34,6 +34,9 @@ def add_five_within(num):
   print(num_plus_two + 3) # 5
 
 add_five_within(10) # 15
+
+ # 3. _______________________________________________________________ # 6.48
+
   
   
   
