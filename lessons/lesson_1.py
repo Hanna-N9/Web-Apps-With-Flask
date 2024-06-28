@@ -37,6 +37,29 @@ add_five_within(10) # 15
 
  # 3. _______________________________________________________________ 
 
+# Returning functions from functions
+
+# This function is going to return a function that adds or substracts a number
+def get_math_function(operation): # + or -
+  def add(n1, n2):
+    return n1 + n2
+  def sub(n1, n2):
+    return n1 - n2
   
+  # Returning a function and not number
+  if operation == "+":
+    return add 
+  elif operation == "-":
+    return sub
+
+add_function = get_math_function("+")
+sub_function = get_math_function("-")
+
+print( add_function(4,6) ) # 10
+print( sub_function(4,6) ) # -2
+
+ # 4. _______________________________________________________________  # 11:00
+
+
   
   
