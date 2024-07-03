@@ -61,6 +61,25 @@ print( sub_function(4,6) ) # -2
  # 4. _______________________________________________________________ 
  
 # Decorating a function
+
+# title_decorator takes print_a_name function and print a name as well as printing out a title
+# Existing print_a_name function to pass to print_name_function and took this function and it wrapped it with additional functionality 
+# which printed a title before a name and then return a new function
+def title_decorator(print_name_function):
+  def wrapper(): 
+    print("Professor:")
+    print_name_function()
+  return wrapper
+   
+def print_a_name():
+  print("Samantha")
+
+# Call title_decorator function, pass in print_a_name function, that passes us back a wrapper function
+decorated_function = title_decorator(print_a_name)
+
+decorated_function()
+ 
+
  
 
 
