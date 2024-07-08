@@ -62,25 +62,25 @@ print( sub_function(4,6) ) # -2
  
 # Decorating a function
 
-# title_decorator takes print_a_name function and print a name as well as printing out a title
-# Define a nested function called wrapper inside the decorator to print a title and a name
-# Return the wrapper function
+# Define the decorator. This function takes one argument, which is another function (in this case, the print_a_name function).
 def title_decorator(print_name_function):
+  # Define a nested function inside the decorator. This prints a title and then calls the original function passed to title_decorator.
   def wrapper(): 
     print("Professor:")
-    print_name_function()
-  return wrapper
+    print_name_function() # Call the original function (print_a_name) passed to the decorator, which in this case is print_a_name.
+  return wrapper 
 
 # Define a function to print a name.
 def print_a_name():
   print("Samantha")
 
-# Call title_decorator function, pass in print_a_name function, that passes us back a wrapper function
-# The result is a new function (decorated_function) that, when called, will first print "Professor:" and then call print_a_name().
+# Apply the decorator to the original function. By passing print_a_name to title_decorator, we get a new function (decorated_function) 
+# that includes the decorator's functionality.
 decorated_function = title_decorator(print_a_name)
 
-# Trigger the execution of the wrapper function defined within title_decorator
-decorated_function()
+# When calling the decorated function, it triggers the execution of the wrapper function defined within title_decorator. Meaning, it will 
+# print the title and then call print_a_name() to print the name.
+decorated_function() 
  
 # 16:35
  
